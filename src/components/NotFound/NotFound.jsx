@@ -1,11 +1,15 @@
-
+import styles from "./NotFound.module.scss";
 
 const NotFound = () => {
   return (
-    <section style={{display: "grid", placeItems: "center", position: "relative"}}>
-     <h1>Nothing here yet</h1>
+    <section className={`${styles.relative}`}>
+      <div className={`${styles.main_container}`}>
+        <>
+          <h1 aria-label="Not Found">Nothing Here Yet</h1>
+        </>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

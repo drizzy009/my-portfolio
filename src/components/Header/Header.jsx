@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { navList } from "./Data";
-import styles from "../Header/Header.module.scss"
+import styles from "../Header/Header.module.scss";
 import { close, menu } from "../../assets/index";
 
 const Header = () => {

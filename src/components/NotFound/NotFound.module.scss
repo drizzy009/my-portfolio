@@ -1,0 +1,12 @@
+.relative {
+  position: relative;
+  padding: 0
+}
+
+.main_container {
+  margin: auto;
+  background: hsl(218, 30%, 20%);
+  height: 500px;
+  display: grid;
+  place-items: center;
+}

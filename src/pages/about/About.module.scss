@@ -12,6 +12,9 @@
   z-index: -1;
   padding: 0 40px;
   left: 0.7vw;
+  background: hsl(218, 30%, 20%);
+  height: fit-content;
+  width: inherit;
 }
 
 .heading,
@@ -24,7 +27,7 @@
   position: absolute;
   border-bottom: 4px solid #e2ff65;
   top: 0;
-  bottom: 30vw;
+  bottom: 86%;
   width: 10%;
 }
 
