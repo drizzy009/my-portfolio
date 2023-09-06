@@ -1,0 +1,38 @@
+.relative {
+  position: relative;
+}
+
+.main_container {
+  position: absolute;
+  top: -1vw;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  z-index: -1;
+  padding: 0 40px;
+  left: 0.7vw;
+}
+
+.heading,
+.content {
+  margin: 10px;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid #e2ff65;
+  top: 0;
+  bottom: 30vw;
+  width: 10%;
+}
+
+.flexbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex_cols {
+  flex: 2;
+}

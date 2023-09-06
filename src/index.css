@@ -1,0 +1,70 @@
+:root {
+  background: #0b1629;
+
+  /* font-size */
+  --fs-10: 45px;
+  --fs-8: 24px;
+  --fs-7: 18px;
+  --fs-6: 17px;
+  --fs-5: 16px;
+  --fs-4: 15px;
+  --fs-3: 14px;
+  --fs-2: 13px;
+  --fs-1: 11px;
+
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+}
+
+*,
+*::before,
+*::after {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+body {
+  max-width: 1024px;
+  margin: auto;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+  position: relative;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "HurmeGeometricSans3 Bold";
+}
+
+h1 {
+  font-size: var(--fs-10);
+}
+
+section {
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end;
+  width: 740px;
+  float: right;
+  background: hsl(218, 30%, 20%);
+  height: 500px;
+  z-index: -1;
+}

@@ -1,0 +1,70 @@
+.relative {
+  position: relative;
+}
+
+.main_container {
+  position: absolute;
+  top: -1vw;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  z-index: -1;
+  padding: 0 40px;
+  left: 0.7vw;
+}
+
+.heading {
+  margin: 10px;
+}
+
+i.fa-solid {
+  color: #e2ff65 !important;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid #e2ff65;
+  top: 0;
+  bottom: 30vw;
+  width: 10%;
+}
+
+.flexbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex_cols {
+  flex: 2;
+}
+
+.resume_container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.resume_container::before {
+  content: "";
+  border-left: 1px solid #e2ff65;
+  position: absolute;
+  top: 8vw;
+  right: 45.7vw;
+  bottom: 0;
+  height: 12vw;
+}
+
+.resume_heading {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.resume_row_one,
+.resume_row_two {
+  display: flex;
+  gap: 32px;
+}
