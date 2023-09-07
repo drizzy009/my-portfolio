@@ -4,5 +4,8 @@
         "src": "/api/sendEmail",
         "methods": ["POST"]
       }
-    ]
+    ],
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/index.html" }
+      ]
   }
