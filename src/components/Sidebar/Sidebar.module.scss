@@ -4,9 +4,51 @@
   gap: 12px;
   justify-content: center;
   align-items: center;
+  padding: 0 0 20px;
   img {
     border-radius: 100%;
-    backdrop-filter: blur(5px); /* Apply a blur filter with a 5px radius */
-    background: #fff !important;
+    // backdrop-filter: blur(5px);
+    // background: #fff !important;
+  }
+  span:nth-child(2) {
+    font-family: "HurmeGeometricSans3 Bold";
+    font-weight: 500;
+    font-size: var(--fs-10);
+  }
+  span:nth-child(3) {
+    background: var(--theme-background);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-family: "HurmeGeometricSans3 Bold";
+    font-weight: 500;
+    font-size: var(--fs-3);
+  }
+}
+.myInfo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 40px 0;
+}
+.icon {
+  font-size: 20px;
+  color: var(--yellow);
+  display: flex;
+  align-items: center;
+  background: hsl(216.73deg 57.65% 16.67% / 30.2%);
+  padding: 8px;
+  border-radius: 12px;
+}
+.content span {
+  color: var(--grey);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  svg {
+    color: var(--yellow);
   }
 }

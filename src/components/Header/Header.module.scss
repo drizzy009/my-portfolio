@@ -2,7 +2,7 @@
   display: flex;
   justify-content: end;
   background: hsl(218, 30%, 20%);
-  width: 740px;
+  width: 840px;
   float: right;
   border-radius: 30px 30px 0 0;
   z-index: 0;
@@ -13,13 +13,13 @@
   display: flex;
   justify-content: end;
   gap: 24px;
-  background: #122543;
+  background: var(--theme-background);
   padding: 20px 40px;
   border-radius: 0 30px 0 30px;
 }
 
 .text_white a {
-  color: #e2ff65;
+  color: var(--yellow);
 }
 
 .text_black a {

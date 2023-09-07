@@ -1,41 +1,52 @@
 .relative {
   position: relative;
+  z-index: 1;
 }
-
 .main_container {
-  position: absolute;
-  top: -1vw;
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   margin: -10px;
   z-index: -1;
-  padding: 0 40px;
-  left: 0.7vw;
   background: hsl(218, 30%, 20%);
   height: fit-content;
   width: inherit;
 }
-
+.heading h1 {
+  position: absolute;
+  top: -2vw;
+  bottom: 0;
+  left: 5%;
+  height: fit-content;
+}
 .heading,
 .content {
   margin: 10px;
 }
-
 .heading::after {
   content: "";
   position: absolute;
-  border-bottom: 4px solid #e2ff65;
+  border-bottom: 4px solid var(--yellow);
   top: 0;
-  bottom: 86%;
+  bottom: 95%;
   width: 10%;
 }
-
 .flexbox {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .flex_cols {
-  flex: 2;
+  display: flex;
+  gap: 12px;
+  background: var(--theme-background);
+  margin: 20px 20px 2px 0;
+  padding: 20px;
+  height: fit-content;
+  border-radius: 20px;
+  svg {
+    font-size: 40px;
+    color: var(--yellow)
+  }
+}
+.flex_cols_box p {
+  padding-top: 10px;
 }

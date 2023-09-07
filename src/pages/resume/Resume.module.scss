@@ -1,20 +1,22 @@
 .relative {
   position: relative;
+  z-index: 1;
 }
-
 .main_container {
-  position: absolute;
-  top: -1vw;
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   margin: -10px;
   z-index: -1;
-  padding: 0 40px;
-  left: 0.7vw;
   background: hsl(218, 30%, 20%);
   height: fit-content;
   width: inherit;
+}
+.heading h1 {
+  position: absolute;
+  top: -2vw;
+  bottom: 0;
+  left: 5%;
+  height: fit-content;
 }
 
 .heading {
@@ -22,15 +24,15 @@
 }
 
 i.fa-solid {
-  color: #e2ff65 !important;
+  color: var(--yellow) !important;
 }
 
 .heading::after {
   content: "";
   position: absolute;
-  border-bottom: 4px solid #e2ff65;
+  border-bottom: 4px solid var(--yellow);
   top: 0;
-  bottom: 86%;
+  bottom: 95%;
   width: 10%;
 }
 
@@ -52,10 +54,10 @@ i.fa-solid {
 
 .resume_container::before {
   content: "";
-  border-left: 1px solid #e2ff65;
+  border-left: 1px solid var(--yellow);
   position: absolute;
-  top: 8vw;
-  right: 45.7vw;
+  top: 6vw;
+  right: 95.5%;
   bottom: 0;
   height: 12vw;
 }
@@ -70,4 +72,5 @@ i.fa-solid {
 .resume_row_two {
   display: flex;
   gap: 32px;
+  margin-left: 4px;
 }
