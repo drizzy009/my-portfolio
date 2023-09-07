@@ -1,0 +1,32 @@
+.relative {
+  position: relative;
+  z-index: 1;
+}
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  z-index: -1;
+  background: hsl(218, 30%, 20%);
+  height: fit-content;
+  width: inherit;
+}
+.heading h1 {
+  position: absolute;
+  top: -2vw;
+  bottom: 0;
+  left: 5%;
+  height: fit-content;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid var(--yellow);
+  top: 0;
+  bottom: 83%;
+  width: 10%;
+  left: 5%;
+}
+.formContainer {
+    margin-top: 40px;
+}
