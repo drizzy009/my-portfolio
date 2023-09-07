@@ -18,10 +18,14 @@
   --fw-500: 500;
   --fw-600: 600;
 
+  --custom-font: "Nunito Sans", sans-serif;
+  --hume-font: "HurmeGeometricSans3 Bold";
+
   --yellow: #e2ff65;
   --theme-background: #122543;
   --grey: #b3b3b3;
   --lighter-shade: hsl(216.73deg 57.65% 16.67% / 30.2%);
+  --white: #fff;
 }
 
 *,

@@ -23,10 +23,15 @@
   position: absolute;
   border-bottom: 4px solid var(--yellow);
   top: 0;
-  bottom: 83%;
+  bottom: 93%;
   width: 10%;
   left: 5%;
 }
 .formContainer {
-    margin-top: 40px;
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+  p {
+    width: 40%;
+  }
 }
