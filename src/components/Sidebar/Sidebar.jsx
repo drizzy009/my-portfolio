@@ -71,11 +71,12 @@ const Sidebar = () => {
         </div>
       </div>
       <div className={styles.socialIcons}>
-        <a href="https://github.com/drizzy009" rel="noreferrer" target="_blank">
+        <a href="https://github.com/drizzy009" aria-label="My GitHub profile" rel="noreferrer" target="_blank">
           <IoLogoGithub />
         </a>
         <a
           href="https://twitter.com/drizzy0x_"
+          aria-label="My Twitter profile"
           rel="noreferrer"
           target="_blank"
         >
@@ -83,6 +84,7 @@ const Sidebar = () => {
         </a>
         <a
           href="https://instagram.com/drizzy0x"
+          aria-label="My instagram profile"
           rel="noreferrer"
           target="_blank"
         >
