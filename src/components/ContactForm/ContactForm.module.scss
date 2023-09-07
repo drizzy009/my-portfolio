@@ -1,0 +1,87 @@
+.formContainer {
+  background: var(--theme-background);
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.inputField {
+  position: relative;
+}
+.form .inputField label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  transition: all 0.3s ease;
+}
+.form .inputField input,
+.form .inputField textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background: transparent;
+}
+// .form .inputField input[type="email"] {
+//   margin: 10px 0;
+// }
+.form .inputField input:placeholder-shown + label,
+.form .inputField textarea:placeholder-shown + label {
+  top: 10px;
+  background: transparent;
+}
+
+.form .inputField input:focus,
+.form .inputField textarea:focus {
+  border-color: #3366cc;
+}
+.form .inputField input:focus + label,
+.form .inputField input:active + label,
+.form .inputField textarea:focus + label,
+.form .inputField textarea:active + label,
+.form .inputField input:not(:placeholder-shown) + label,
+.form .inputField textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 14px;
+  background: var(--theme-background);
+}
+
+.form .inputField textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #27408b;
+}
+.inputField span {
+  font-size: 10px;
+  color: var(--yellow);
+  margin-bottom: 10px;
+  display: flex;
+  height: 30px;
+}
