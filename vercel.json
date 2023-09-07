@@ -1,11 +1,9 @@
 {
-    "routes": [
-      {
-        "src": "/api/sendEmail",
-        "methods": ["POST"]
-      }
-    ],
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/index.html" }
-      ]
-  }
+  "routes": [
+    {
+      "src": "/api/sendEmail",
+      "methods": ["POST"]
+    }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
