@@ -1,3 +1,4 @@
+import { PiBookOpenTextBold, PiCircleFill } from "react-icons/pi";
 import styles from "./Resume.module.scss";
 
 const Resume = () => {
@@ -9,11 +10,11 @@ const Resume = () => {
         </div>
         <div className={`${styles.resume_container}`}>
           <div className={`${styles.resume_heading}`}>
-            <i className="fa-solid fa-book"></i>
+            <PiBookOpenTextBold/>
             <h3>Education</h3>
           </div>
           <div className={`${styles.resume_row_one}`}>
-            <i className="fa-solid fa-circle"></i>
+            <PiCircleFill/>
             <div className={`${styles.resume_content}`}>
               <h4>Federal University of Agriculture, Abeokuta</h4>
               <span aria-label="Year Duration">2014 - 2020</span>
@@ -26,7 +27,7 @@ const Resume = () => {
             </div>
           </div>
           <div className={`${styles.resume_row_two}`}>
-            <i className="fa-solid fa-circle"></i>
+            <PiCircleFill/>
             <div className={`${styles.resume_content}`}>
               <h4>Federal University of Agriculture, Abeokuta</h4>
               <span aria-label="Year Duration">2014 - 2020</span>
@@ -45,7 +46,7 @@ const Resume = () => {
             <h3>Education</h3>
           </div>
           <div className={`${styles.resume_row_one}`}>
-            <i className="fa-solid fa-circle"></i>
+            <PiCircleFill/>
             <div className={`${styles.resume_content}`}>
               <h4>Federal University of Agriculture, Abeokuta</h4>
               <span aria-label="Year Duration">2014 - 2020</span>
@@ -58,7 +59,7 @@ const Resume = () => {
             </div>
           </div>
           <div className={`${styles.resume_row_two}`}>
-            <i className="fa-solid fa-circle"></i>
+            <PiCircleFill/>
             <div className={`${styles.resume_content}`}>
               <h4>Federal University of Agriculture, Abeokuta</h4>
               <span aria-label="Year Duration">2014 - 2020</span>
