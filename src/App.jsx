@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false); // Turn off the loader after 3 seconds
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer); // Clean up the timer on unmount (optional)
   }, []);

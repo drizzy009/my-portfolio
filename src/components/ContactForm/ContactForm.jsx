@@ -71,42 +71,54 @@ function ContactForm() {
         }}
       >
         {({ isSubmitting }) => (
-          <Form>
-            <div className={styles.nameField}>
-              <Field
-                type="text"
-                name="name"
-                value={userInput.name}
-                onChange={handleInputChange}
-              />
-              <ErrorMessage name="name" component="div" />
-            </div>
-            <div className={styles.emailField}>
-              <Field
-                type="email"
-                name="email"
-                value={userInput.email}
-                onChange={handleInputChange}
-              />
-              <ErrorMessage name="email" component="div" />
-            </div>
-            <div className={styles.messageField}>
-              <Field
-                as="textarea"
-                name="message"
-                value={userInput.message}
-                onChange={handleInputChange}
-              />
-              <ErrorMessage name="message" component="div" />
-            </div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              onClick={handleFormSubmit}
-            >
-              Submit
-            </button>
-          </Form>
+          <div className={styles.formContainer}>
+            <Form className={styles.form}>
+              <div className={styles.inputField}>
+                <Field
+                  type="text"
+                  name="name"
+                  placeholder="‎"
+                  id="name"
+                  value={userInput.name}
+                  onChange={handleInputChange}
+                />
+                <label htmlFor="name">Full name</label>
+                <ErrorMessage name="name" component="span" />
+              </div>
+              <div className={styles.inputField}>
+                <Field
+                  type="email"
+                  name="email"
+                  placeholder="‎"
+                  id="email"
+                  value={userInput.email}
+                  onChange={handleInputChange}
+                />
+                <label htmlFor="email">Email</label>
+                <ErrorMessage name="email" component="span" />
+              </div>
+              <div className={styles.inputField}>
+                <Field
+                  as="textarea"
+                  name="message"
+                  placeholder="‎"
+                  id="message"
+                  value={userInput.message}
+                  onChange={handleInputChange}
+                  rows="3"
+                />
+                <label htmlFor="message">Your message</label>
+                <ErrorMessage name="message" component="span" />
+              </div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                onClick={handleFormSubmit}
+              >
+                Submit
+              </button>
+            </Form>
+          </div>
         )}
       </Formik>
     </>
