@@ -3,7 +3,19 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import styles from "./ContactForm.module.scss";
 
 function ContactForm() {
-  const [userInput, setUserInput] = useState("");
+  const [userInput, setUserInput] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUserInput({
+      ...userInput,
+      [name]: value,
+    });
+  };
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -14,17 +26,17 @@ function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          message: userInput,
-          name: userInput,
-          email: userInput,
-        }),
+        body: JSON.stringify(userInput), // Send the userInput object
       });
 
       console.log("Response status:", response.status);
 
       if (response.ok) {
-        setUserInput("");
+        setUserInput({
+          name: "",
+          email: "",
+          message: "",
+        });
       } else {
         const errorData = await response.json();
         console.error("Error:", errorData.error);
@@ -37,7 +49,7 @@ function ContactForm() {
   return (
     <>
       <Formik
-        initialValues={{ name: "", email: "", message: "" }}
+        initialValues={userInput} // Initialize the form with userInput
         validate={(values) => {
           const errors = {};
 
@@ -61,15 +73,30 @@ function ContactForm() {
         {({ isSubmitting }) => (
           <Form>
             <div className={styles.nameField}>
-              <Field type="text" name="name" />
+              <Field
+                type="text"
+                name="name"
+                value={userInput.name}
+                onChange={handleInputChange}
+              />
               <ErrorMessage name="name" component="div" />
             </div>
             <div className={styles.emailField}>
-              <Field type="email" name="email" />
+              <Field
+                type="email"
+                name="email"
+                value={userInput.email}
+                onChange={handleInputChange}
+              />
               <ErrorMessage name="email" component="div" />
             </div>
             <div className={styles.messageField}>
-              <Field as="textarea" name="message" />
+              <Field
+                as="textarea"
+                name="message"
+                value={userInput.message}
+                onChange={handleInputChange}
+              />
               <ErrorMessage name="message" component="div" />
             </div>
             <button
