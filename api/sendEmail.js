@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -14,13 +15,13 @@ const sendEmail = async (req, res) => {
   }
 
   try {
-    const { message } = req.body; // Retrieve from req.body instead of req.query
+    const { name, email, message } = req.body; // Retrieve from req.body instead of req.query
 
     const mailOptions = {
       from: "idris.dev0x@gmail.com",
       to: "idris.dev0x@gmail.com",
       subject: "New Contact from Portfolio",
-      text: message,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`, // Format the email content
     };
 
     await transporter.sendMail(mailOptions);
@@ -33,5 +34,4 @@ const sendEmail = async (req, res) => {
   }
 };
 
-
-export default sendEmail;
+module.exports = sendEmail;
