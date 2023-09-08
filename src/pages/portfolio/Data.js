@@ -18,8 +18,10 @@ export const portfolioData = [
     id: "wsihome",
     img: wsihome,
     title: "WSI Axon",
-    caption: "Frontend Development",
-    alt: "WSI"
+    caption: "Wordpress Development",
+    alt: "WSI",
+    technology: "WordPress",
+    url: "https://wsiaxon.com"
   },
   {
     id: "devsopshome",
@@ -27,7 +29,9 @@ export const portfolioData = [
     imgFull: devopsfull,
     title: "DevOps Notepad",
     caption: "Frontend Development",
-    alt: "DevOps"
+    alt: "DevOps",
+    technology: "ReactJS",
+    url: "https://wsiaxon.com"
   },
   {
     id: "habeebathome",
@@ -35,7 +39,9 @@ export const portfolioData = [
     imgFull: habeebatfull,
     title: "Habeebat",
     caption: "Wordpress Development",
-    alt: "Habeebat"
+    alt: "Habeebat",
+    technology: "WordPress",
+    url: "https://habeebat.com"
   },
   {
     id: "axonhome",
@@ -43,7 +49,9 @@ export const portfolioData = [
     imgFull: axonhome,
     title: "Axon Analytics Limited",
     caption: "Wordpress Development",
-    alt: "Axon"
+    alt: "Axon",
+    technology: "WordPress",
+    url: "https://axonanalytics.com.ng"
   },
   {
     id: "metabnbhome",
@@ -51,7 +59,9 @@ export const portfolioData = [
     imgFull: metabnbfull,
     title: "MetaBNB",
     caption: "Frontend Development",
-    alt: "MetaBNB"
+    alt: "MetaBNB",
+    technology: "ReactJS",
+    url: "https://wsiaxon.com"
   },
   {
     id: "techtimehome",
@@ -59,7 +69,9 @@ export const portfolioData = [
     imgFull: techtimefull,
     title: "TechTime",
     caption: "Frontend Development",
-    alt: "TechTime"
+    alt: "TechTime",
+    technology: "ReactJS",
+    url: "https://wsiaxon.com"
   },
   {
     id: "wsiblog",
@@ -67,6 +79,8 @@ export const portfolioData = [
     imgFull: wsiblogfull,
     title: "WSI Axon Blog",
     caption: "Content Creation",
-    alt: "WSI"
+    alt: "WSI",
+    technology: "WordPress",
+    url: "https://wsiaxon.com/blog"
   },
 ];
