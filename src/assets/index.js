@@ -1,5 +1,6 @@
 import menu from "./menu.svg";
 import close from "./close.svg";
+import favicon from "./favicon.svg";
 import axonhome from "./axon_home.webp";
 import devops from "./DevOps.webp";
 import devopsfull from "./DevOps full.webp";
@@ -16,6 +17,7 @@ import wsihome from "./wsi_home.webp";
 export {
   menu,
   close,
+  favicon,
   axonhome,
   devops,
   devopsfull,

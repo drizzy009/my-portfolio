@@ -41,7 +41,7 @@ export const portfolioData = [
     id: "axonhome",
     img: axonhome,
     imgFull: axonhome,
-    title: "Habeebat",
+    title: "Axon Analytics Limited",
     caption: "Wordpress Development",
     alt: "Axon"
   },
