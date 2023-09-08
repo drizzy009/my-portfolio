@@ -6,6 +6,7 @@ const About = lazy(() => import('./pages/about/About'));
 const Resume = lazy(() => import('./pages/resume/Resume'));
 const NotFound = lazy(() => import('./components/NotFound/NotFound'));
 const Contact = lazy(() => import( './pages/contact/Contact'));
+const Portfolio = lazy(() => import( './pages/portfolio/Portfolio'));
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

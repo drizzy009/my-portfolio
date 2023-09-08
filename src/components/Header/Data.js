@@ -1,4 +1,3 @@
-
 export const navList = [
   {
     id: "/",
@@ -15,5 +14,5 @@ export const navList = [
   {
     id: "contact",
     title: "Contact",
-  }
+  },
 ];
