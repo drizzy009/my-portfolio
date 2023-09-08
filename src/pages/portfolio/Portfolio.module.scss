@@ -1,0 +1,50 @@
+.relative {
+  position: relative;
+  z-index: 1;
+}
+.main_container {
+  margin: -10px;
+  z-index: -1;
+  background: hsl(218, 30%, 20%);
+  height: fit-content;
+  width: inherit;
+}
+.heading h1 {
+  position: absolute;
+  top: -2vw;
+  bottom: 0;
+  left: 5%;
+  height: fit-content;
+}
+.heading,
+.content {
+  margin: 10px;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid var(--yellow);
+  top: 0;
+  bottom: 95%;
+  width: 10%;
+}
+.portfolioContainer {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.portfolioBox {
+  margin: 10px;
+  background: var(--theme-background);
+  border-radius: 16px;
+  padding: 10px;
+  img {
+    width: 100%;
+    object-fit: fill;
+    background: var(--theme-background);
+    height: 150px;
+    border-radius: 16px;
+  }
+  span {
+    color: var(--grey);
+  }
+}
