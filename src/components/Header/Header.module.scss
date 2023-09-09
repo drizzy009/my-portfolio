@@ -27,8 +27,8 @@
 .flex {
   display: flex;
   position: absolute;
-  top: 0;
-  right: 35%;
+  top: -50px;
+  right: 2%;
   z-index: 1;
   background: var(--yellow);
 }
@@ -47,6 +47,13 @@
   }
   .nav_mobile_main {
     display: block;
+    img {
+      position: fixed;
+      top: 1%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+    }
   }
   .nav_background {
     background: unset;

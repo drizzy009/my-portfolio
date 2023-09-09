@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaChevronLeft } from "react-icons/fa6";
+import { PiMinusBold } from "react-icons/pi";
 import {
   IoMailSharp,
   IoLogoGithub,
@@ -21,7 +21,7 @@ const Sidebar = () => {
     <aside className={`${styles.aside} ${menuOpen ? styles.open : ""}`}>
       <div className={styles.hamburger} onClick={toggleMenu}>
         {menuOpen ? (
-          <FaChevronLeft className={styles.closeIcon} />
+          <PiMinusBold className={styles.closeIcon} />
         ) : (
           <>
             <div className={`${styles.hamburgerLine}`}>
@@ -120,7 +120,7 @@ const Sidebar = () => {
           <span aria-label="Developers name">Sirdi Fusuy</span>
           <span aria-label="My role">Frontend Developer</span>
         </div>
-        <hr />
+        <hr style={{width: "60%", margin: "auto"}} />
         <div className={styles.myInfo}>
           <div className={styles.icon}>
             <IoMailSharp />
