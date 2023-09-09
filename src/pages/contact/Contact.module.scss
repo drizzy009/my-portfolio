@@ -35,3 +35,22 @@
     width: 40%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .main_container {
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  .heading h1 {
+    position: unset;
+  }
+  .formContainer {
+    flex-direction: column;
+    p {
+      width: 100%;
+    }
+  }
+  .heading::after {
+    bottom: 88%;
+  }
+}

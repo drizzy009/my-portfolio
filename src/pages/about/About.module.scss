@@ -44,9 +44,28 @@
   border-radius: 20px;
   svg {
     font-size: 40px;
-    color: var(--yellow)
+    color: var(--yellow);
   }
 }
 .flex_cols_box p {
   padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .main_container {
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  .flex_cols {
+    flex-direction: column;
+  }
+  .heading h1 {
+    position: unset;
+  }
+  .flex_cols {
+    margin: 20px auto;
+  }
+  .flexbox {
+    grid-template-columns: 1fr;
+  }
 }

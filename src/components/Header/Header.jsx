@@ -14,6 +14,11 @@ const Header = () => {
     localStorage.setItem("activePage", active);
   }, [active]);
 
+  const handleNavClick = (title) => {
+    setActive(title);
+    setToggle(false); // Hide mobile navigation items
+  };
+
   return (
     <>
       <nav className={`${styles.nav_background}`}>
@@ -26,13 +31,12 @@ const Header = () => {
                   ? `${styles.text_white}`
                   : `${styles.text_black}`
               } ${index === navList.length - 1 ? "mr-0" : "mr-10"}`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => handleNavClick(nav.title)}
             >
               <NavLink to={nav.id}>{nav.title}</NavLink>
             </li>
           ))}
         </ul>
-        {/*<button className={`${styles.navbtnConnect} sm:flex hidden `}>Connect wallet</button>*/}
 
         <div className={`${styles.nav_mobile_main}`}>
           <img
@@ -42,15 +46,15 @@ const Header = () => {
             onClick={() => setToggle(!toggle)}
           />
 
-          <div className={`${!toggle ? "hidden" : "flex"}`}>
+          <div className={`${toggle ? styles.flex : styles.hidden}`}>
             <ul className={`${styles.nav_mobile}`}>
               {navList.map((nav, index) => (
                 <li
                   key={nav.id}
                   className={`${
-                    active === nav.title ? "text-white" : "text-dimWhite"
+                    active === nav.title ? styles.text_white : styles.text_black
                   } ${index === navList.length - 1 ? "mb-0" : "mb-4"}`}
-                  onClick={() => setActive(nav.title)}
+                  onClick={() => handleNavClick(nav.title)}
                 >
                   <NavLink to={nav.id}>{nav.title}</NavLink>
                 </li>
