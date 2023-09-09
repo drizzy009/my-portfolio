@@ -1,5 +1,4 @@
 import { useState } from "react";
-import LazyLoad from "react-lazyload";
 import { IoClose } from "react-icons/io5";
 import { portfolioData } from "./Data";
 import styles from "./Portfolio.module.scss";
@@ -42,13 +41,11 @@ const Portfolio = () => {
                 className={styles.portfolioBox}
                 id={portfolio.id}
               >
-                <LazyLoad height={200} offset={100}>
                   <img
                     src={portfolio.img}
                     alt={portfolio.alt}
                     onClick={() => openPopup(portfolio.id)}
                   />
-                </LazyLoad>
                 <h4>{portfolio.title}</h4>
                 <span>{portfolio.caption}</span>
               </div>
