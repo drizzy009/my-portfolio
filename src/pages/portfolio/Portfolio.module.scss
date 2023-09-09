@@ -50,6 +50,7 @@
     background: var(--theme-background);
     height: 150px;
     border-radius: 16px;
+    cursor: pointer;
   }
 
   span {
@@ -149,3 +150,23 @@
     color: var(--black)
   }
 }
+
+@media screen and (max-width: 767px) {
+  .main_container {
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  .flex_cols {
+    flex-direction: column;
+  }
+  .heading h1 {
+    position: unset;
+  }
+  .flex_cols {
+    margin: 20px auto;
+  }
+  .portfolioContainer {
+    grid-template-columns: 1fr;
+  }
+}
+

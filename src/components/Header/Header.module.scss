@@ -21,6 +21,17 @@
 .text_white a {
   color: var(--yellow);
 }
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 35%;
+  z-index: 1;
+  background: var(--yellow);
+}
 
 .text_black a {
   color: #fefefe;
@@ -36,5 +47,9 @@
   }
   .nav_mobile_main {
     display: block;
+  }
+  .nav_background {
+    background: unset;
+    z-index: 9999;
   }
 }

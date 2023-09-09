@@ -80,3 +80,17 @@ section {
   border-radius: 0 0 30px 30px;
   margin-bottom: 60px;
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    max-width: unset;
+  }
+  section {
+    flex-direction: column;
+    width: unset;
+    float: unset;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 30px;
+  }
+}
