@@ -125,8 +125,8 @@
   .closeIcon {
     fill: #a3a4a4;
     stroke: #a3a4a4;
-    height: 16px;
-    width: 16px;
+    height: 8%;
+    width: 8%;
     transform: rotate(180deg);
     transition: transform 0.3s ease-in-out;
     float: right;
@@ -136,7 +136,6 @@
     transform: translate(15%, -100%);
     border: 3px solid #a3a4a4;
     border-radius: 50%;
-    padding: 6px;
   }
   .myInfo {
     flex-direction: column;
@@ -156,4 +155,13 @@
     width: 87%;
     border-radius: 12px;
   }
+}
+.tooltip {
+  transform: translate(-5px, -40px);
+  background: var(--theme-background);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: auto;
 }
