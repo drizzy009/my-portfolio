@@ -18,8 +18,12 @@ function ContactForm() {
     setFieldValue(name, value); // Trigger form validation
   };
 
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async (event, isValid) => {
     event.preventDefault();
+
+    if (!isValid) {
+      return; // Don't submit the form if it's not valid
+    }
 
     try {
       const response = await fetch("/api/sendEmail", {
@@ -72,14 +76,15 @@ function ContactForm() {
 
           return errors;
         }}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { setSubmitting, isValid }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
+            handleFormSubmit(isValid); // Pass the form validity to handleFormSubmit
           }, 400);
         }}
       >
-        {({ isSubmitting, setFieldValue }) => (
+        {({ isSubmitting, setFieldValue, isValid }) => (
           <div className={styles.formContainer}>
             <Form className={styles.form}>
               <div className={styles.inputField}>
@@ -125,7 +130,7 @@ function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                onClick={handleFormSubmit}
+                onClick={(e) => handleFormSubmit(e, isValid)}
               >
                 Submit
               </button>
