@@ -9,12 +9,13 @@ function ContactForm() {
     message: "",
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e, setFieldValue) => {
     const { name, value } = e.target;
     setUserInput({
       ...userInput,
       [name]: value,
     });
+    setFieldValue(name, value); // Trigger form validation
   };
 
   const handleFormSubmit = async (event) => {
@@ -61,6 +62,14 @@ function ContactForm() {
             errors.email = "Invalid email address";
           }
 
+          if (!values.name) {
+            errors.name = "Required";
+          }
+
+          if (!values.message) {
+            errors.message = "Required";
+          }
+
           return errors;
         }}
         onSubmit={(values, { setSubmitting }) => {
@@ -70,7 +79,7 @@ function ContactForm() {
           }, 400);
         }}
       >
-        {({ isSubmitting }) => (
+        {({ isSubmitting, setFieldValue }) => (
           <div className={styles.formContainer}>
             <Form className={styles.form}>
               <div className={styles.inputField}>
@@ -80,7 +89,7 @@ function ContactForm() {
                   placeholder="‎"
                   id="name"
                   value={userInput.name}
-                  onChange={handleInputChange}
+                  onChange={(e) => handleInputChange(e, setFieldValue)}
                   required
                 />
                 <label htmlFor="name">Full name</label>
@@ -93,7 +102,7 @@ function ContactForm() {
                   placeholder="‎"
                   id="email"
                   value={userInput.email}
-                  onChange={handleInputChange}
+                  onChange={(e) => handleInputChange(e, setFieldValue)}
                   required
                 />
                 <label htmlFor="email">Email</label>
@@ -106,7 +115,7 @@ function ContactForm() {
                   placeholder="‎"
                   id="message"
                   value={userInput.message}
-                  onChange={handleInputChange}
+                  onChange={(e) => handleInputChange(e, setFieldValue)}
                   rows="3"
                   required
                 />
