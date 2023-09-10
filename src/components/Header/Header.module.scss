@@ -23,6 +23,7 @@
 }
 .hidden {
   display: none;
+  animation: slideOut ease-out 0.3s;
 }
 .flex {
   display: flex;
@@ -30,7 +31,17 @@
   top: -50px;
   right: 2%;
   z-index: 1;
-  background: var(--yellow);
+  background: var(--inner-background);
+  animation: slideIn ease-in-out 0.3s;
+  border-radius: 8px;
+}
+.nav_mobile {
+  padding: 10px 40px;
+  margin: auto;
+  li {
+    padding: 10px 0;
+    text-align: center;
+  }
 }
 
 .text_black a {
@@ -39,6 +50,30 @@
 
 .nav_mobile_main {
   display: none;
+}
+.harmburger {
+  transform: translate(-20px, -80px);
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
 }
 
 @media only screen and (max-width: 767px) {
