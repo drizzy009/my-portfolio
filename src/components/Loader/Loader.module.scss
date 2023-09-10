@@ -96,3 +96,10 @@
       translate(0, calc(var(--translation) * 1.5%));
   }
 }
+
+@media screen and (max-width: 767px) {
+  .spinner {
+    left: 12em;
+    top: 18em;
+  }
+}
