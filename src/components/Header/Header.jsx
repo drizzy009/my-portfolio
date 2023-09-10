@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { CgMenuLeft, CgClose } from "react-icons/cg";
 import { navList } from "./Data";
 import styles from "../Header/Header.module.scss";
-import { close, menu } from "../../assets/index";
 
 const Header = () => {
   const [active, setActive] = useState(
@@ -39,12 +39,17 @@ const Header = () => {
         </ul>
 
         <div className={`${styles.nav_mobile_main}`}>
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className=""
+          <span
+            className={styles.harmburger}
+            aria-label="Harmburger Icon"
             onClick={() => setToggle(!toggle)}
-          />
+          >
+            {toggle ? (
+              <CgClose />
+            ) : (
+              <CgMenuLeft style={{ transform: "rotate(180deg)" }} />
+            )}
+          </span>
 
           <div className={`${toggle ? styles.flex : styles.hidden}`}>
             <ul className={`${styles.nav_mobile}`}>
