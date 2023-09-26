@@ -1,4 +1,6 @@
-import { PiBookOpenTextBold, PiCircleFill } from "react-icons/pi";
+import { PiBookOpenTextBold } from "react-icons/pi";
+import {GiAchievement} from 'react-icons/gi'
+import {GrTechnology} from 'react-icons/gr'
 import styles from "./Resume.module.scss";
 
 const Resume = () => {
@@ -10,65 +12,69 @@ const Resume = () => {
         </div>
         <div className={`${styles.resume_container}`}>
           <div className={`${styles.resume_heading}`}>
-            <PiBookOpenTextBold/>
+            <PiBookOpenTextBold />
             <h3>Education</h3>
           </div>
           <div className={`${styles.resume_row_one}`}>
-            <PiCircleFill/>
             <div className={`${styles.resume_content}`}>
               <h4>Federal University of Agriculture, Abeokuta</h4>
               <span aria-label="Year Duration">2014 - 2020</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui
-                distinctio repudiandae sed illo possimus eum, accusantium
-                accusamus nihil quo, ab aliquid beatae necessitatibus eaque
-                officia ut suscipit temporibus totam?
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.resume_row_two}`}>
-            <PiCircleFill/>
-            <div className={`${styles.resume_content}`}>
-              <h4>Federal University of Agriculture, Abeokuta</h4>
-              <span aria-label="Year Duration">2014 - 2020</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui
-                distinctio repudiandae sed illo possimus eum, accusantium
-                accusamus nihil quo, ab aliquid beatae necessitatibus eaque
-                officia ut suscipit temporibus totam?
-              </p>
+              <p>BSc in Aquaculture & Fisheries Mgt</p>
             </div>
           </div>
         </div>
         <div className={`${styles.resume_container}`}>
           <div className={`${styles.resume_heading}`}>
-            <i className="fa-solid fa-book"></i>
-            <h3>Education</h3>
+            <GiAchievement />
+            <h3>Achievement</h3>
           </div>
           <div className={`${styles.resume_row_one}`}>
-            <PiCircleFill/>
             <div className={`${styles.resume_content}`}>
-              <h4>Federal University of Agriculture, Abeokuta</h4>
-              <span aria-label="Year Duration">2014 - 2020</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui
-                distinctio repudiandae sed illo possimus eum, accusantium
-                accusamus nihil quo, ab aliquid beatae necessitatibus eaque
-                officia ut suscipit temporibus totam?
-              </p>
+              <ul>
+                <li>
+                  Identified and fixed clients payment integration on
+                  woocommerce.
+                </li>
+                <li>
+                  Successfully retrived an already hacked wordpress website
+                  injected with malwares.
+                </li>
+                <li>
+                  Learnt to integrate an AI Powered Growth Marketing suite
+                  (Netcore Cloud) that enables brands to listen, analyse, and
+                  converse & improve conversions across Mobile App and Website.
+                </li>
+                <li>
+                  Built a fully functional website from scratch for a client
+                  using a UI/UX provided by the product designers.
+                </li>
+                <li>
+                  Managed multiple client WordPress sites, including setting up
+                  new sites, maintaining and updating existing sites, and
+                  troubleshooting any issues that arose.
+                </li>
+                <li>
+                  Successfully maintained the functionality of multiple plugins
+                  across client sites, including identifying and resolving
+                  conflicts and errors.
+                </li>
+                <li>
+                  {" "}
+                  Utilized SiteGround to stage and test client websites before
+                  deployment, ensuring a smooth and seamless transition to live sites.
+                </li>
+              </ul>
             </div>
           </div>
-          <div className={`${styles.resume_row_two}`}>
-            <PiCircleFill/>
+        </div>
+        <div className={`${styles.resume_container}`}>
+          <div className={`${styles.resume_heading}`}>
+            <GrTechnology />
+            <h3>Technologies Used</h3>
+          </div>
+          <div className={`${styles.resume_row_one}`}>
             <div className={`${styles.resume_content}`}>
-              <h4>Federal University of Agriculture, Abeokuta</h4>
-              <span aria-label="Year Duration">2014 - 2020</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui
-                distinctio repudiandae sed illo possimus eum, accusantium
-                accusamus nihil quo, ab aliquid beatae necessitatibus eaque
-                officia ut suscipit temporibus totam?
-              </p>
+              
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 import { SiWordpress } from "react-icons/si";
-import { FaCode, FaVirusCovidSlash } from 'react-icons/fa6';
+import { FaCode, FaVirusCovidSlash } from "react-icons/fa6";
 import styles from "./About.module.scss";
 
 const About = () => {
@@ -11,18 +12,13 @@ const About = () => {
         </div>
         <div className={`${styles.content}`}>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-            beatae fugit nobis labore! Placeat odio alias non officia ea,
-            consectetur debitis neque facilis inventore corporis, perferendis
-            velit nisi unde vel facere corrupti libero! Odit necessitatibus iste
-            animi eaque voluptates ab! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eligendi quam quaerat ab sunt sit voluptas eveniet
-            rem explicabo dolores quas!
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            impedit aspernatur et temporibus asperiores quibusdam magni
-            exercitationem, sequi veniam, ullam dignissimos aliquid ut,
-            laudantium vitae officia repellat. Eligendi, sed porro.
+            I'm a passionate frontend developer with 2 years of experience,
+            specializing in HTML, CSS, JavaScript, and React.js. I excel in
+            crafting intuitive and visually appealing user experiences.
+            Currently at Axon Analytics Limited, I design and maintain websites,
+            collaborate with UI designers, and communicate effectively with
+            non-technical stakeholders. I'm eager to contribute to innovative
+            teams.
           </p>
         </div>
         <div className={`${styles.heading}`}>
@@ -35,9 +31,10 @@ const About = () => {
               <div className={styles.flex_cols_box}>
                 <h3>Frontend Development</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem quos odio numquam a doloremque nostrum aperiam
-                  odit reiciendis alias tenetur.
+                  With a keen eye for design, I specialize in crafting
+                  captivating user interfaces using HTML, CSS, and JavaScript,
+                  ensuring seamless and visually stunning web experiences that
+                  leave a lasting impression.
                 </p>
               </div>
             </div>
@@ -48,9 +45,10 @@ const About = () => {
               <div className={styles.flex_cols_box}>
                 <h3>Wordpress Web Development</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem quos odio numquam a doloremque nostrum aperiam
-                  odit reiciendis alias tenetur.
+                  Building and customizing high-performance WordPress websites
+                  tailored to perfection. I specialize in robust security setups
+                  to fortify your site against potential threats and ensure
+                  rock-solid protection.
                 </p>
               </div>
             </div>
@@ -61,9 +59,9 @@ const About = () => {
               <div className={styles.flex_cols_box}>
                 <h3>Wordpress Malware Removal</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem quos odio numquam a doloremque nostrum aperiam
-                  odit reiciendis alias tenetur.
+                  Proficient in WordPress malware removal, I efficiently detect
+                  and eliminate threats, ensuring your website's safety and
+                  uninterrupted performance.
                 </p>
               </div>
             </div>
@@ -72,11 +70,12 @@ const About = () => {
                 <SiWordpress />
               </div>
               <div className={styles.flex_cols_box}>
-                <h3>Wordpress Web Development</h3>
+                <h3>Other services offered</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem quos odio numquam a doloremque nostrum aperiam
-                  odit reiciendis alias tenetur.
+                  Beyond web design, I can assist with website domain and
+                  hosting solutions, seamless WordPress site migrations, email
+                  setup, and an array of other services to optimize your online
+                  presence.
                 </p>
               </div>
             </div>
