@@ -13,6 +13,8 @@ import techtimefull from "./TechTime full.webp";
 import wsiblog from "./wsi_blog_.webp";
 import wsiblogfull from "./wsi_blog_full.webp";
 import wsihome from "./wsi_home.webp";
+import movie2 from "./movie2.webp";
+import movie from "./movie.webp";
 
 export {
   menu,
@@ -30,4 +32,6 @@ export {
   wsiblog,
   wsiblogfull,
   wsihome,
+  movie,
+  movie2
 };
