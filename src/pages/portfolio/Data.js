@@ -1,7 +1,7 @@
 import {
   axonhome,
-  devops,
-  devopsfull,
+  movie,
+  movie2,
   habeebat,
   habeebatfull,
   metabnb,
@@ -24,12 +24,12 @@ export const portfolioData = [
     url: "https://wsiaxon.com"
   },
   {
-    id: "devsopshome",
-    img: devops,
-    imgFull: devopsfull,
-    title: "DevOps Notepad",
+    id: "movieapp",
+    img: movie,
+    imgFull: movie2,
+    title: "Community Movie App",
     caption: "Frontend Development",
-    alt: "DevOps",
+    alt: "movieapp",
     technology: "ReactJS",
     url: "https://wsiaxon.com"
   },
