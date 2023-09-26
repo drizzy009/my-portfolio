@@ -69,7 +69,7 @@ const Resume = () => {
         </div>
         <div className={`${styles.resume_container}`}>
           <div className={`${styles.resume_heading}`}>
-            <GrTechnology />
+            <GrTechnology style={{color: "var(--white)"}} />
             <h3>Technologies Used</h3>
           </div>
           <div className={`${styles.resume_row_one}`}>
