@@ -120,7 +120,7 @@ const Sidebar = () => {
             height={64}
             alt="Idris Yusuf"
           />
-          <span aria-label="Developers name">Sirdi Fusuy</span>
+          <span aria-label="Developers name">Idris Yusuf</span>
           <span aria-label="My role">Frontend Developer</span>
         </div>
         <hr style={{ width: "60%", margin: "auto" }} />
