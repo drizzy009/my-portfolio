@@ -65,10 +65,10 @@ const Portfolio = () => {
             <div className={styles.popupOpened}>
               <img src={popupData.imgFull} alt={popupData.title} />
               <div>
-                <h3>{popupData.technology}</h3>
-                <p>
+                <h3 style={{color: "#fff"}}>{popupData.technology}</h3>
+                <p style={{color: "#fff"}}>
                   Check it out{" "}
-                  <a href={popupData.url} rel="noreferrer" target="_blank">
+                  <a href={popupData.url} rel="noreferrer" target="_blank" style={{textDecoration: "underline", color: "#fff"}}>
                     here
                   </a>
                 </p>

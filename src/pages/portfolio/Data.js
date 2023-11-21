@@ -31,7 +31,7 @@ export const portfolioData = [
     caption: "Frontend Development",
     alt: "movieapp",
     technology: "ReactJS",
-    url: "https://wsiaxon.com"
+    url: "https://hng-movie-community-app.vercel.app/"
   },
   {
     id: "habeebathome",
@@ -61,7 +61,7 @@ export const portfolioData = [
     caption: "Frontend Development",
     alt: "MetaBNB",
     technology: "ReactJS",
-    url: "https://wsiaxon.com"
+    url: "https://metabnb-hng-ebon.vercel.app/"
   },
   {
     id: "techtimehome",
@@ -71,7 +71,7 @@ export const portfolioData = [
     caption: "Frontend Development",
     alt: "TechTime",
     technology: "ReactJS",
-    url: "https://wsiaxon.com"
+    url: "https://techtime-one.vercel.app/"
   },
   {
     id: "wsiblog",
