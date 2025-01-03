@@ -95,7 +95,7 @@ function ContactForm() {
                   id="name"
                   value={userInput.name}
                   onChange={(e) => handleInputChange(e, setFieldValue)}
-                  required
+                  required=""
                 />
                 <label htmlFor="name">Full name</label>
                 <ErrorMessage name="name" component="span" />
@@ -108,7 +108,7 @@ function ContactForm() {
                   id="email"
                   value={userInput.email}
                   onChange={(e) => handleInputChange(e, setFieldValue)}
-                  required
+                  required=""
                 />
                 <label htmlFor="email">Email</label>
                 <ErrorMessage name="email" component="span" />
@@ -122,7 +122,7 @@ function ContactForm() {
                   value={userInput.message}
                   onChange={(e) => handleInputChange(e, setFieldValue)}
                   rows="3"
-                  required
+                  required=""
                 />
                 <label htmlFor="message">Your message</label>
                 <ErrorMessage name="message" component="span" />

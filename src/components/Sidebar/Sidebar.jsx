@@ -53,7 +53,9 @@ const Sidebar = () => {
           </div>
           <div className={styles.content}>
             <span>Email</span>
-            <p>idris.dev0x@gmail.com</p>
+            <p>
+              <a href="mailto:idris.dev0x@gmail.com" style={{color: "#fff"}}>idris.dev0x@gmail.com</a>
+            </p>
           </div>
         </div>
         <div className={styles.myInfo}>
@@ -62,7 +64,7 @@ const Sidebar = () => {
           </div>
           <div className={styles.content}>
             <span>Mobile Number</span>
-            <p>+2348101064478</p>
+            <p><a href="tel:+2348101064478" style={{color: "#fff"}}>+2348101064478</a></p>
           </div>
         </div>
         <div className={styles.myInfo}>
