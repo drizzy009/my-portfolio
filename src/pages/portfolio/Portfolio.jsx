@@ -1,32 +1,8 @@
-import { useState } from "react";
-import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
 import { portfolioData } from "./Data";
 import styles from "./Portfolio.module.scss";
 
 const Portfolio = () => {
-  const [popupOpen, setPopupOpen] = useState(null);
-  const [popupData, setPopupData] = useState(null);
-
-  const openPopup = (id) => {
-    const data = portfolioData.find((item) => item.id === id);
-    if (data) {
-      setPopupData(data);
-      setPopupOpen(id);
-    }
-  };
-
-  const closePopup = () => {
-    const popupContent = document.querySelector(`.${styles.popupContent}`);
-    if (popupContent) {
-      popupContent.classList.add(styles.slideOut);
-      setTimeout(() => {
-        setPopupOpen(null);
-        setPopupData(null);
-        popupContent.classList.remove(styles.slideOut);
-      }, 500);
-    }
-  };
-
   return (
     <section className={`${styles.relative}`}>
       <div className={`${styles.main_container}`}>
@@ -34,49 +10,39 @@ const Portfolio = () => {
           <h1 aria-label="My portfolio">Portfolio</h1>
         </div>
         <div className={`${styles.content}`}>
-          <div className={styles.portfolioContainer}>
-            {portfolioData.map((portfolio) => (
-              <div
+          <motion.div 
+            className={styles.portfolioContainer} 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1 }}
+          >
+            {portfolioData.map((portfolio, index) => (
+              <motion.div
                 key={portfolio.id}
                 className={styles.portfolioBox}
-                id={portfolio.id}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: index * 0.1,
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 150
+                }}
+                onClick={() => window.open(portfolio.url, "_blank")}
               >
+                <div className={styles.portfolioImageWrapper}>
                   <img
                     src={portfolio.img}
                     alt={portfolio.alt}
-                    onClick={() => openPopup(portfolio.id)}
                   />
+                </div>
                 <h4>{portfolio.title}</h4>
                 <span>{portfolio.caption}</span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-
-      {popupOpen && (
-        <div className={styles.popup}>
-          <div className={styles.popupContent}>
-            <button onClick={closePopup} className={styles.closeButton}>
-              <IoClose className={styles.closeIcon} />
-            </button>
-            <h2>{popupData.title}</h2>
-            <p>{popupData.description}</p>
-            <div className={styles.popupOpened}>
-              <img src={popupData.imgFull} alt={popupData.title} />
-              <div>
-                <h3 style={{color: "#fff"}}>{popupData.technology}</h3>
-                <p style={{color: "#fff"}}>
-                  Check it out{" "}
-                  <a href={popupData.url} rel="noreferrer" target="_blank" style={{textDecoration: "underline", color: "#fff"}}>
-                    here
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

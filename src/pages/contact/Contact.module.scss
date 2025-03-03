@@ -1,6 +1,7 @@
 .relative {
   position: relative;
   z-index: 1;
+  // padding: 30px;
 }
 .main_container {
   display: flex;
@@ -11,21 +12,21 @@
   height: fit-content;
   width: inherit;
 }
-.heading h1 {
-  position: absolute;
-  top: -2vw;
-  bottom: 0;
-  left: 5%;
-  height: fit-content;
-}
+// .heading h1 {
+//   position: absolute;
+//   top: -2vw;
+//   bottom: 0;
+//   left: 4%;
+//   height: fit-content;
+// }
 .heading::after {
   content: "";
   position: absolute;
   border-bottom: 4px solid var(--yellow);
   top: 0;
-  bottom: 93%;
-  width: 10%;
-  left: 5%;
+  bottom: 81%;
+  width: 12%;
+  left: 4%;
 }
 .formContainer {
   margin-top: 40px;
@@ -51,6 +52,8 @@
     }
   }
   .heading::after {
-    bottom: 88%;
+    bottom: 86%;
+    width: 24%;
+    left: 6%;
   }
 }

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { SiWordpress } from "react-icons/si";
 import { FaCode, FaVirusCovidSlash } from "react-icons/fa6";
+import { motion } from "framer-motion";
 import styles from "./About.module.scss";
 
 const About = () => {
@@ -24,7 +25,12 @@ const About = () => {
         <div className={`${styles.heading}`}>
           <h2 aria-label="What i do">What I do</h2>
           <div className={`${styles.flexbox}`}>
-            <div className={`${styles.flex_cols}`}>
+            <motion.div
+              className={`${styles.flex_cols}`}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 150 }}
+            >
               <div className={styles.flex_cols_box}>
                 <FaCode />
               </div>
@@ -37,8 +43,14 @@ const About = () => {
                   leave a lasting impression.
                 </p>
               </div>
-            </div>
-            <div className={`${styles.flex_cols}`}>
+            </motion.div>
+
+            <motion.div
+              className={`${styles.flex_cols}`}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 150 }}
+            >
               <div className={styles.flex_cols_box}>
                 <SiWordpress />
               </div>
@@ -51,8 +63,14 @@ const About = () => {
                   rock-solid protection.
                 </p>
               </div>
-            </div>
-            <div className={`${styles.flex_cols}`}>
+            </motion.div>
+
+            <motion.div
+              className={`${styles.flex_cols}`}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 150 }}
+            >
               <div className={styles.flex_cols_box}>
                 <FaVirusCovidSlash />
               </div>
@@ -64,8 +82,14 @@ const About = () => {
                   uninterrupted performance.
                 </p>
               </div>
-            </div>
-            <div className={`${styles.flex_cols}`}>
+            </motion.div>
+
+            <motion.div
+              className={`${styles.flex_cols}`}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 150 }}
+            >
               <div className={styles.flex_cols_box}>
                 <SiWordpress />
               </div>
@@ -78,7 +102,7 @@ const About = () => {
                   presence.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

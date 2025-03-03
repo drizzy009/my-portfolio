@@ -11,13 +11,13 @@
   height: fit-content;
   width: inherit;
 }
-.heading h1 {
-  position: absolute;
-  top: -2vw;
-  bottom: 0;
-  left: 5%;
-  height: fit-content;
-}
+// .heading h1 {
+//   position: absolute;
+//   top: -2vw;
+//   bottom: 0;
+//   left: 5%;
+//   height: fit-content;
+// }
 
 .heading {
   margin: 10px;
@@ -32,9 +32,10 @@
   position: absolute;
   border-bottom: 4px solid var(--yellow);
   top: 0;
-  bottom: 94%;
-  width: 10%;
-  right: 85%;
+  bottom: 90%;
+  width: 12%;
+  left: 5%;
+  /* height: 0; */
 }
 
 .flexbox {

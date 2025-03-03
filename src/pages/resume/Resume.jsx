@@ -1,6 +1,8 @@
 import { PiBookOpenTextBold } from "react-icons/pi";
-import {GiAchievement} from 'react-icons/gi'
-import {GrTechnology} from 'react-icons/gr'
+import { GiAchievement } from 'react-icons/gi';
+import { GrTechnology } from 'react-icons/gr';
+import { FaReact, FaCss3Alt, FaHtml5, FaWordpress } from 'react-icons/fa';
+import { SiTailwindcss, SiSass } from 'react-icons/si';
 import styles from "./Resume.module.scss";
 
 const Resume = () => {
@@ -19,49 +21,35 @@ const Resume = () => {
             <div className={`${styles.resume_content}`}>
               <h4>Federal University of Agriculture, Abeokuta</h4>
               <span aria-label="Year Duration">2014 - 2020</span>
-              <p>BSc in Aquaculture & Fisheries Mgt</p>
+              <p>BSc in Aquaculture & Fisheries Management</p>
             </div>
           </div>
         </div>
         <div className={`${styles.resume_container}`}>
           <div className={`${styles.resume_heading}`}>
             <GiAchievement />
-            <h3>Achievement</h3>
+            <h3>Achievements</h3>
           </div>
           <div className={`${styles.resume_row_one}`}>
             <div className={`${styles.resume_content}`}>
               <ul>
                 <li>
-                  Identified and fixed clients payment integration on
-                  woocommerce.
+                  Spearheaded the complete redesign and redevelopment of UBA Group and UBA Nigeria websites, building over 150 pages.
                 </li>
                 <li>
-                  Successfully retrived an already hacked wordpress website
-                  injected with malwares.
+                  Built a sophisticated event landing page using ReactJS that automatically generates personalized QR codes for user registrations.
                 </li>
                 <li>
-                  Learnt to integrate an AI Powered Growth Marketing suite
-                  (Netcore Cloud) that enables brands to listen, analyse, and
-                  converse & improve conversions across Mobile App and Website.
+                  Developed multiple API integrations, including stock, news, and currency exchange APIs, for dynamic data updates.
                 </li>
                 <li>
-                  Built a fully functional website from scratch for a client
-                  using a UI/UX provided by the product designers.
+                  Managed and maintained multiple WordPress client websites, ensuring functionality, plugin compatibility, and security.
                 </li>
                 <li>
-                  Managed multiple client WordPress sites, including setting up
-                  new sites, maintaining and updating existing sites, and
-                  troubleshooting any issues that arose.
+                  Successfully integrated AI-driven marketing features using the Netcore Cloud platform, improving website engagement.
                 </li>
                 <li>
-                  Successfully maintained the functionality of multiple plugins
-                  across client sites, including identifying and resolving
-                  conflicts and errors.
-                </li>
-                <li>
-                  {" "}
-                  Utilized SiteGround to stage and test client websites before
-                  deployment, ensuring a smooth and seamless transition to live sites.
+                  Delivered over 40 dynamic landing pages for marketing campaigns, optimizing user engagement and conversions.
                 </li>
               </ul>
             </div>
@@ -74,7 +62,41 @@ const Resume = () => {
           </div>
           <div className={`${styles.resume_row_one}`}>
             <div className={`${styles.resume_content}`}>
-              
+              <div className={styles.tech_icons}>
+                <FaHtml5 />
+                <FaCss3Alt />
+                <FaReact />
+                <SiTailwindcss />
+                <SiSass />
+                <FaWordpress />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={`${styles.resume_container}`}>
+          <div className={`${styles.resume_heading}`}>
+            <GiAchievement />
+            <h3>Work Experience</h3>
+          </div>
+          <div className={`${styles.resume_row_one}`}>
+            <div className={`${styles.resume_content}`}>
+              <h4>Frontend Developer</h4>
+              <span aria-label="Year Duration">Aug 2022 - Present</span>
+              <p>Axon Analytics Limited</p>
+              <ul>
+                <li>
+                  Develop clean and intuitive front-end interfaces in collaboration with the UI/UX team.
+                </li>
+                <li>
+                  Manage the design and development of large-scale corporate websites, ensuring optimal workflow.
+                </li>
+                <li>
+                  Conduct quality assurance testing to identify errors and improve usability.
+                </li>
+                <li>
+                  Delivered over 40 dynamic landing pages on time, contributing significantly to marketing initiatives.
+                </li>
+              </ul>
             </div>
           </div>
         </div>

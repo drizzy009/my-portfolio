@@ -15,14 +15,14 @@ function ContactForm() {
       ...userInput,
       [name]: value,
     });
-    setFieldValue(name, value); // Trigger form validation
+    setFieldValue(name, value); 
   };
 
   const handleFormSubmit = async (event, isValid) => {
     event.preventDefault();
 
     if (!isValid) {
-      return; // Don't submit the form if it's not valid
+      return; 
     }
 
     try {
@@ -31,7 +31,7 @@ function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(userInput), // Send the userInput object
+        body: JSON.stringify(userInput),
       });
 
       console.log("Response status:", response.status);
@@ -54,7 +54,7 @@ function ContactForm() {
   return (
     <>
       <Formik
-        initialValues={userInput} // Initialize the form with userInput
+        initialValues={userInput}
         validate={(values) => {
           const errors = {};
 
@@ -80,7 +80,7 @@ function ContactForm() {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
-            handleFormSubmit(isValid); // Pass the form validity to handleFormSubmit
+            handleFormSubmit(isValid);
           }, 400);
         }}
       >
