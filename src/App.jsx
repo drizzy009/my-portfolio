@@ -12,13 +12,12 @@ const Portfolio = lazy(() => import( './pages/portfolio/Portfolio'));
 function App() {
   const [loading, setLoading] = useState(true);
 
-  // Simulate a 3-second delay
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); // Turn off the loader after 3 seconds
+      setLoading(false);
     }, 1000);
 
-    return () => clearTimeout(timer); // Clean up the timer on unmount (optional)
+    return () => clearTimeout(timer);
   }, []);
 
   return (

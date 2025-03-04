@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { toast, Toaster } from "sonner";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import styles from "./ContactForm.module.scss";
@@ -46,16 +45,6 @@ function ContactForm() {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Idris Yusuf - Frontend Developer</title>
-        <meta name="description" content="Get in touch with Idris Yusuf for web development projects, collaborations, or inquiries about React and WordPress services." />
-        <meta name="keywords" content="Contact, Web Developer, React Developer, WordPress Expert, Hire Me" />
-        <meta property="og:description" content="Check out my resume highlighting my experience, skills, and achievements in frontend development." />
-        <meta property="og:url" content="https://portfolio-x01.vercel.app/contact" />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://portfolio-x01.vercel.app/contact" />
-      </Helmet>
-
       <Toaster position="top-right" closeButton richColors />
 
       <Formik

@@ -16,7 +16,7 @@ const Header = () => {
 
   const handleNavClick = (title) => {
     setActive(title);
-    setToggle(false); // Hide mobile navigation items
+    setToggle(false);
   };
 
   return (
@@ -41,7 +41,7 @@ const Header = () => {
         <div className={`${styles.nav_mobile_main}`}>
           <span
             className={styles.harmburger}
-            aria-label="Harmburger Icon"
+            role="menu"
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? (
