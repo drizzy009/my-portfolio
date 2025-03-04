@@ -9,13 +9,14 @@ This is the **personal portfolio** of **Idris Yusuf**, a **Frontend Developer** 
 ---
 
 ## Tech Stack
-- **Frontend:** React.js, SCSS, TailwindCSS
+- **Frontend:** React.js, SCSS
 - **Animations:** Framer Motion
 - **Forms & Validation:** Formik
 - **State Management:** React Hooks
 - **SEO & Metadata:** React Helmet Async
 - **Notifications:** Sonner (for toast messages)
 - **Deployment:** Vercel
+- **Email Handling:** Nodemailer API
 
 ---
 
@@ -33,6 +34,7 @@ This is the **personal portfolio** of **Idris Yusuf**, a **Frontend Developer** 
 ### Prerequisites
 - Git
 - Vercel CLI (for deployment)
+- Vercel API
 
 ### Clone the Repository
 ```sh

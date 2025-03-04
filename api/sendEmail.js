@@ -15,13 +15,13 @@ const sendEmail = async (req, res) => {
   }
 
   try {
-    const { name, email, message } = req.body; // Retrieve from req.body instead of req.query
+    const { name, email, message } = req.body;
 
     const mailOptions = {
       from: "idris.dev0x@gmail.com",
       to: "idris.dev0x@gmail.com",
       subject: "New Contact from Portfolio",
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`, // Format the email content
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);
