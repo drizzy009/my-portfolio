@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { toast, Toaster } from "sonner";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import styles from "./ContactForm.module.scss";
 
@@ -23,6 +24,7 @@ function ContactForm() {
     event.preventDefault();
 
     if (!isValid) {
+      toast.error("Please fill in all required fields.");
       return; 
     }
 
@@ -38,6 +40,7 @@ function ContactForm() {
       console.log("Response status:", response.status);
 
       if (response.ok) {
+        toast.success("Email sent successfully!");
         setUserInput({
           name: "",
           email: "",
@@ -45,10 +48,10 @@ function ContactForm() {
         });
       } else {
         const errorData = await response.json();
-        console.error("Error:", errorData.error);
+        toast.error(`Failed to send email: ${errorData.error}`);
       }
     } catch (error) {
-      console.error("Fetch error:", error);
+      toast.error("Something went wrong. Please try again later.");
     }
   };
 
@@ -63,6 +66,7 @@ function ContactForm() {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://portfolio-x01.vercel.app/contact" />
       </Helmet>
+      <Toaster position="top-right" closeButton richColors />
       <Formik
         initialValues={userInput}
         validate={(values) => {
