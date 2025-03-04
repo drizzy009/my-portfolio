@@ -69,6 +69,11 @@
   }
 }
 
+.resume_content > div {
+  display: flex;
+  gap: 8px;
+}
+
 // .resume_container::before {
 //   content: "";
 //   border-left: 1px solid var(--yellow);

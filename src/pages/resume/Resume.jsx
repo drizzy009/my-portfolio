@@ -1,8 +1,8 @@
 import { PiBookOpenTextBold } from "react-icons/pi";
-import { GiAchievement } from 'react-icons/gi';
-import { GrTechnology } from 'react-icons/gr';
-import { FaReact, FaCss3Alt, FaHtml5, FaWordpress } from 'react-icons/fa';
-import { SiTailwindcss, SiSass } from 'react-icons/si';
+import { GiAchievement } from "react-icons/gi";
+import { GrTechnology } from "react-icons/gr";
+import { FaReact, FaCss3Alt, FaHtml5, FaWordpress } from "react-icons/fa";
+import { SiTailwindcss, SiSass } from "react-icons/si";
 import styles from "./Resume.module.scss";
 
 const Resume = () => {
@@ -34,22 +34,29 @@ const Resume = () => {
             <div className={`${styles.resume_content}`}>
               <ul>
                 <li>
-                  Spearheaded the complete redesign and redevelopment of UBA Group and UBA Nigeria websites, building over 150 pages.
+                  Spearheaded the complete redesign and redevelopment of UBA
+                  Group and UBA Nigeria websites, building over 150 pages. (Ongoing)
                 </li>
                 <li>
-                  Built a sophisticated event landing page using ReactJS that automatically generates personalized QR codes for user registrations.
+                  Built a sophisticated event landing page using ReactJS that
+                  automatically generates personalized QR codes for user
+                  registrations.
                 </li>
                 <li>
-                  Developed multiple API integrations, including stock, news, and currency exchange APIs, for dynamic data updates.
+                  Developed multiple API integrations, including stock, news,
+                  and currency exchange APIs, for dynamic data updates.
                 </li>
                 <li>
-                  Managed and maintained multiple WordPress client websites, ensuring functionality, plugin compatibility, and security.
+                  Managed and maintained multiple WordPress client websites,
+                  ensuring functionality, plugin compatibility, and security.
                 </li>
                 <li>
-                  Successfully integrated AI-driven marketing features using the Netcore Cloud platform, improving website engagement.
+                  Successfully integrated AI-driven marketing features using the
+                  Netcore Cloud platform, improving website engagement.
                 </li>
                 <li>
-                  Delivered over 40 dynamic landing pages for marketing campaigns, optimizing user engagement and conversions.
+                  Delivered over 40 dynamic landing pages for marketing
+                  campaigns, optimizing user engagement and conversions.
                 </li>
               </ul>
             </div>
@@ -57,7 +64,7 @@ const Resume = () => {
         </div>
         <div className={`${styles.resume_container}`}>
           <div className={`${styles.resume_heading}`}>
-            <GrTechnology style={{color: "var(--white)"}} />
+            <GrTechnology style={{ color: "var(--white)" }} />
             <h3>Technologies Used</h3>
           </div>
           <div className={`${styles.resume_row_one}`}>
@@ -85,16 +92,24 @@ const Resume = () => {
               <p>Axon Analytics Limited</p>
               <ul>
                 <li>
-                  Develop clean and intuitive front-end interfaces in collaboration with the UI/UX team.
+                  Developed a dynamic QR code generator from website registrations that automates
+                  personalized event registrations confirmation, seamlessly embedding unique QR
+                  codes into email templates as either a Base64/PNG image
+                  attachment or a detailed PDF. This solution streamlined event
+                  management by enabling secure, authorized entry, enhancing
+                  attendee experience, and improving operational efficiency.
                 </li>
                 <li>
-                  Manage the design and development of large-scale corporate websites, ensuring optimal workflow.
+                  Develop clean and intuitive front-end interfaces in
+                  collaboration with the UI/UX team.
                 </li>
                 <li>
-                  Conduct quality assurance testing to identify errors and improve usability.
+                  Manage the design and development of large-scale corporate
+                  websites, ensuring optimal workflow.
                 </li>
                 <li>
-                  Delivered over 40 dynamic landing pages on time, contributing significantly to marketing initiatives.
+                  Conduct quality assurance testing to identify errors and
+                  improve usability.
                 </li>
               </ul>
             </div>
