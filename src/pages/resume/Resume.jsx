@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { PiBookOpenTextBold } from "react-icons/pi";
 import { GiAchievement } from "react-icons/gi";
 import { GrTechnology } from "react-icons/gr";
@@ -7,6 +8,17 @@ import styles from "./Resume.module.scss";
 
 const Resume = () => {
   return (
+    <>
+     <Helmet>
+        <title>Resume - Idris Yusuf | Frontend Developer</title>
+        <meta name="description" content="Explore the resume of Idris Yusuf, a Frontend Developer with expertise in React, WordPress, and modern web development technologies." />
+        <meta name="keywords" content="Resume, Idris Yusuf, Frontend Developer, React Developer, Web Developer, WordPress Developer" />
+        <meta property="og:title" content="Resume - Idris Yusuf | Frontend Developer" />
+        <meta property="og:description" content="Check out my resume highlighting my experience, skills, and achievements in frontend development." />
+        <meta property="og:url" content="https://portfolio-x01.vercel.app/resume" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://portfolio-x01.vercel.app/resume" />
+      </Helmet>
     <section className={`${styles.relative}`}>
       <div className={`${styles.main_container}`}>
         <div className={`${styles.heading}`}>
@@ -117,6 +129,7 @@ const Resume = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
