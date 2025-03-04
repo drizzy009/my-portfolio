@@ -5,7 +5,7 @@
 
 .main_container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: -10px;
   z-index: -1;
   background: hsl(218, 30%, 20%);
@@ -21,9 +21,12 @@
 //   height: fit-content;
 // }
 
-.heading,
-.content {
+.heading {
   margin: 10px;
+}
+
+.content {
+  margin: 30px 10px 0 10px;
 }
 
 .heading::after {
@@ -31,9 +34,9 @@
   position: absolute;
   border-bottom: 4px solid var(--yellow);
   top: 0;
-  bottom: 83%;
+  bottom: 87%;
   width: 12%;
-  left: 3%;
+  left: 5%;
 }
 
 .flexbox {
@@ -88,7 +91,7 @@
   }
 
   .heading::after {
-    bottom: 96%;
+    bottom: 94.2%;
     width: 24%;
     left: 9%;
   }

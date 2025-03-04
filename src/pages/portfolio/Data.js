@@ -78,9 +78,9 @@ export const portfolioData = [
     img: wsiblog,
     imgFull: wsiblogfull,
     title: "WSI Axon Blog",
-    caption: "Content Creation",
+    caption: "Dynamic Blog Template",
     alt: "WSI",
-    technology: "WordPress",
+    technology: "WordPress-Dynamic",
     url: "https://wsiaxon.com/blog"
   },
 ];
