@@ -71,7 +71,7 @@ function ContactForm() {
           if (!values.message) errors.message = "Required";
           return errors;
         }}
-        onSubmit={handleFormSubmit} // ✅ Corrected Form Submission
+        onSubmit={handleFormSubmit} 
       >
         {({ isSubmitting, setFieldValue }) => (
           <div className={styles.formContainer}>
@@ -113,7 +113,6 @@ function ContactForm() {
                 <ErrorMessage name="message" component="span" />
               </div>
 
-              {/* ✅ Fixed: Let Formik handle form submission properly */}
               <button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : "Submit"}
               </button>
