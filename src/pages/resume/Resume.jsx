@@ -47,7 +47,7 @@ const Resume = () => {
               <ul>
                 <li>
                   Spearheaded the complete redesign and redevelopment of UBA
-                  Group and UBA Nigeria websites, building over 150 pages. (Ongoing)
+                  Group and UBA Nigeria websites, building over 150 pages. (3months)
                 </li>
                 <li>
                   Built a sophisticated event landing page using ReactJS that

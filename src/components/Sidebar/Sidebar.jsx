@@ -8,6 +8,7 @@ import {
   IoCall,
   IoToday,
   IoLocation,
+  IoLogoLinkedin,
 } from "react-icons/io5";
 import styles from "./Sidebar.module.scss";
 
@@ -109,6 +110,14 @@ const Sidebar = () => {
             target="_blank"
           >
             <IoLogoInstagram />
+          </a>
+          <a
+            href="linkedin.com/in/idris-yusuf-663117a6"
+            aria-label="My LinkedIn profile"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <IoLogoLinkedin />
           </a>
         </div>
       </div>
