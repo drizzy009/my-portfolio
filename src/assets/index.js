@@ -15,6 +15,7 @@ import wsiblogfull from "./wsi_blog_full.webp";
 import wsihome from "./wsi_home.webp";
 import movie2 from "./movie2.webp";
 import movie from "./movie.webp";
+import plantingco from "./plantingco.webp";
 
 export {
   menu,
@@ -33,5 +34,6 @@ export {
   wsiblogfull,
   wsihome,
   movie,
-  movie2
+  movie2,
+  plantingco
 };

@@ -11,9 +11,19 @@ import {
   wsiblog,
   wsiblogfull,
   wsihome,
+  plantingco
 } from "../../assets/index";
 
 export const portfolioData = [
+  {
+    id: "plantingcop",
+    img: plantingco,
+    title: "PlantingCo",
+    caption: "Wordpress Development",
+    alt: "PlantingCo",
+    technology: "WordPress",
+    url: "https://plantingco.ng"
+  },
   {
     id: "wsihome",
     img: wsihome,
