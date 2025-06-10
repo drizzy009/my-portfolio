@@ -112,7 +112,7 @@ const Sidebar = () => {
             <IoLogoInstagram />
           </a>
           <a
-            href="linkedin.com/in/idris-yusuf-663117a6"
+            href="https://linkedin.com/in/idris-yusuf-663117a6"
             aria-label="My LinkedIn profile"
             rel="noreferrer"
             target="_blank"
