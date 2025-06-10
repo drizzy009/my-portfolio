@@ -61,11 +61,13 @@ const Portfolio = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
+              title=""
             >
               {portfolioData.map((portfolio, index) => (
                 <motion.div
                   key={portfolio.id}
                   className={styles.portfolioBox}
+                  title={`Visit ${portfolio.title}`}
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
