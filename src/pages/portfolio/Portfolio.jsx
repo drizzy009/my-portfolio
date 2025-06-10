@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { portfolioData } from "./Data";
 import acfIcon from "../../assets/acf.svg";
-import { FaReact, FaWordpress, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { FaReact, FaWordpress, FaHtml5, FaCss3Alt, FaJs, FaExternalLinkAlt } from "react-icons/fa";
 import { SiSass } from "react-icons/si";
 import styles from "./Portfolio.module.scss";
 import { FaElementor } from "react-icons/fa6";
@@ -79,7 +79,7 @@ const Portfolio = () => {
                   <div className={styles.portfolioImageWrapper}>
                     <img src={portfolio.img} alt={portfolio.alt} />
                   </div>
-                  <h4>{portfolio.title}</h4>
+                  <h4>{portfolio.title} <FaExternalLinkAlt/></h4>
                   <div className={styles.captionContainer}>
                     <span>{portfolio.caption}</span>
                     <motion.div
