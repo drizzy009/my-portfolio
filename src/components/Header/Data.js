@@ -16,7 +16,7 @@ export const navList = [
     title: "Contact",
   },
   {
-    id: "/assets/resume.pdf",
-    title: "Download CV",
+    id: "/assets/idris-cv.pdf",
+    title: "Download Resume",
   },
 ];
