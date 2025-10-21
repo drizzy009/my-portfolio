@@ -16,6 +16,14 @@ import wsihome from "./wsi_home.webp";
 import movie2 from "./movie2.webp";
 import movie from "./movie.webp";
 import plantingco from "./plantingco.webp";
+import ubanig from "./uba-nigeria.webp";
+import ubagroup from "./uba-group.webp";
+import axonnew from "./axon.webp";
+import locator from "./locator.webp";
+import ntcre from "./netcore.webp";
+import scanner from "./scanner.webp";
+import wedding from "./wedding.webp";
+import mothersday from "./mothersday.webp";
 
 export {
   menu,
@@ -35,5 +43,13 @@ export {
   wsihome,
   movie,
   movie2,
-  plantingco
+  plantingco,
+  ubanig,
+  ubagroup,
+  axonnew,
+  locator,
+  ntcre,
+  scanner,
+  wedding,
+  mothersday,
 };

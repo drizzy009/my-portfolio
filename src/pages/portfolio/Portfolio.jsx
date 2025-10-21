@@ -2,8 +2,8 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { portfolioData } from "./Data";
 import acfIcon from "../../assets/acf.svg";
-import { FaReact, FaWordpress, FaHtml5, FaCss3Alt, FaJs, FaExternalLinkAlt } from "react-icons/fa";
-import { SiSass } from "react-icons/si";
+import { FaReact, FaWordpress, FaHtml5, FaCss3Alt, FaJs, FaExternalLinkAlt, FaNodeJs } from "react-icons/fa";
+import { SiSass, SiMongodb, SiExpress } from "react-icons/si";
 import styles from "./Portfolio.module.scss";
 import { FaElementor } from "react-icons/fa6";
 
@@ -26,6 +26,14 @@ const stackIcons = {
   CSS3: <FaCss3Alt className={styles.icon} style={{ color: "#1572B6" }} />,
   JavaScript: <FaJs className={styles.icon} style={{ color: "#F7DF1E" }} />,
   Sass: <SiSass className={styles.icon} style={{ color: "#CC6699" }} />,
+  MERN: (
+    <div className={styles.stackIconsGroup}>
+      <SiMongodb className={styles.icon} style={{ color: "#47A248" }} title="MongoDB" />
+      <SiExpress className={styles.icon} style={{ color: "#000000" }} title="Express" />
+      <FaReact className={styles.icon} style={{ color: "#61DBFB" }} title="React" />
+      <FaNodeJs className={styles.icon} style={{ color: "#68A063" }} title="Node.js" />
+    </div>
+  ),
 };
 
 const Portfolio = () => {
@@ -81,15 +89,24 @@ const Portfolio = () => {
                   <div className={styles.portfolioImageWrapper}>
                     <img src={portfolio.img} alt={portfolio.alt} />
                   </div>
-                  <h4>{portfolio.title} <FaExternalLinkAlt/></h4>
+                  <h4>{portfolio.title} <FaExternalLinkAlt /></h4>
                   <div className={styles.captionContainer}>
                     <span>{portfolio.caption}</span>
                     <motion.div
                       className={styles.stackIcon}
                       animate={{ rotate: 360 }}
-                      // transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
+                    // transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
                     >
-                      {stackIcons[portfolio.technology]}
+                      <div className={styles.stackIconsGroup}>
+                        {Array.isArray(portfolio.technology)
+                          ? portfolio.technology.map((tech) => (
+                            <span key={tech} className={styles.stackIcon}>
+                              {stackIcons[tech]}
+                            </span>
+                          ))
+                          : stackIcons[portfolio.technology]}
+                      </div>
+
                     </motion.div>
                   </div>
                 </motion.div>
