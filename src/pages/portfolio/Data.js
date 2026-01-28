@@ -19,10 +19,50 @@ import {
   wedding,
   ntcre,
   locator,
-  mothersday
+  mothersday,
+  accexxinsight,
+  thetplat,
+  haywards,
+  pristine,
 } from "../../assets/index";
 
 export const portfolioData = [
+  {
+    id: "accexxinsight",
+    img: accexxinsight,
+    title: "Accexx Insight",
+    caption: "Wordpress Dev",
+    alt: "Accexx Insight Display Image",
+    technology: "WordPress-Dynamic",
+    url: "https://accexxinsight.com"
+  },
+    {
+    id: "thetplat",
+    img: thetplat,
+    title: "The Transformation Platform",
+    caption: "Wordpress Dev",
+    alt: "TheTplat Display Image",
+    technology: "WordPress-Dynamic",
+    url: "https://thetplat.com"
+  },
+  {
+    id: "haywards",
+    img: haywards,
+    title: "Haywards Engineering",
+    caption: "Haywards Engineering",
+    alt: "Haywards Engineering Display Image",
+    technology: "WordPress",
+    url: "https://haywardsengineering.com"
+  },
+  {
+    id: "pristine",
+    img: pristine,
+    title: "Pristine Light PhotoBooth",
+    caption: "Pristine Light PhotoBooth",
+    alt: "Pristine Light PhotoBooth Display Image",
+    technology: "WordPress",
+    url: "https://pristinelightphotobooth.com"
+  },
   {
     id: "ubanigeria",
     img: ubanig,

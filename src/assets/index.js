@@ -24,6 +24,10 @@ import ntcre from "./netcore.webp";
 import scanner from "./scanner.webp";
 import wedding from "./wedding.webp";
 import mothersday from "./mothersday.webp";
+import accexxinsight from "./accexxinsight.webp";
+import thetplat from "./thetplat.webp";
+import haywards from "./haywards.webp";
+import pristine from "./pristine.webp";
 
 export {
   menu,
@@ -52,4 +56,8 @@ export {
   scanner,
   wedding,
   mothersday,
+  accexxinsight,
+  thetplat,
+  haywards,
+  pristine,
 };
